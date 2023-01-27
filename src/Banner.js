@@ -30,11 +30,9 @@ function Banner() {
       className="banner"
       style={{
         backgroundSize: "cover",
-        // backgroundImage: `url("https://assets.nflxext.com/ffe/siteui/vlv3/1ecf18b2-adad-4684-bd9a-acab7f2a875f/6abbb576-106a-4175-a16e-af91cf881736/IN-en-20230116-popsignuptwoweeks-perspective_alpha_website_large.jpg")`,
-        // backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/7/71/Black.png")`,
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.
       backdrop_path}")`,
-        backgroundPosition: "center center",
+        backgroundPosition: "center top",
       }}
     >
       <div className="banner_contents">
