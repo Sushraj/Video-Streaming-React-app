@@ -6,6 +6,10 @@ import LoginScreen from "./screens/LoginScreen";
 
 function App() {
   const user = null;
+
+  // useEffect(() => {
+  //   auth.onAuth
+  // },[]);
   return (
     <div className="app">
       <Router>
