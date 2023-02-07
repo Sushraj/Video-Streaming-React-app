@@ -24,7 +24,9 @@ function SignupScreen() {
     )
       .then((response) => {
         console.log(response);
-        toast.success("Congratulations, your account has been successfully registered");
+        toast.success(
+          "Congratulations, your account has been successfully registered"
+        );
 
         sessionStorage.setItem(
           "Auth Token",
@@ -33,7 +35,10 @@ function SignupScreen() {
       })
       .catch((error) => {
         alert(error.message);
-        if (error.message === "Firebase: Password should be at least 6 characters (auth/weak-password).") {
+        if (
+          error.message ===
+          "Firebase: Password should be at least 6 characters (auth/weak-password)."
+        ) {
           toast.error("Password should be at least 6 characters");
         }
       });
@@ -48,6 +53,9 @@ function SignupScreen() {
     )
       .then((response) => {
         console.log(response);
+        if (response) {
+          toast.success("User login Successfully");
+        }
       })
       .catch((error) => {
         alert(error.message);
@@ -61,7 +69,6 @@ function SignupScreen() {
           toast.error("Please enter valid email ");
         }
       });
-
   };
   return (
     <div className="SignupScreen">
