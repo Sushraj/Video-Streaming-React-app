@@ -34,7 +34,6 @@ function SignupScreen() {
         );
       })
       .catch((error) => {
-        alert(error.message);
         if (
           error.message ===
           "Firebase: Password should be at least 6 characters (auth/weak-password)."
@@ -58,7 +57,6 @@ function SignupScreen() {
         }
       })
       .catch((error) => {
-        alert(error.message);
         if (error.message === "Firebase: Error (auth/wrong-password).") {
           toast.error("Please check the Password");
         }
